@@ -163,26 +163,6 @@ operation:
                 stepCounter: "0"
             transform: ""
         systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 511e4ee4-35f3-4d5f-8f55-1701ac4f8147
-          stepCounter: d842c19b-d979-47c2-8f46-79b3bd6b6efd
-        config: {}
-        dataType: decimal
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: C_ANOTHER_TEST_COL
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: ""
-        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
