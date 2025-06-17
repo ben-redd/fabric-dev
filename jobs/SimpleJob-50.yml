@@ -1,6 +1,6 @@
 excludeSelector: ""
 fileVersion: 1
 id: "50"
-includeSelector: "{ subgraph: \"3 nodes\" }"
+includeSelector: "{ location: SOURCE name: CUSTOMER } OR { location: DESTINATION name: STG_CUSTOMER }"
 name: Simple Job
 type: Job
