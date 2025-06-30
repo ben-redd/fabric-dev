@@ -1,0 +1,10 @@
+fileVersion: 1
+id: 6fde46a1-9e8c-4f2b-938c-7e0b0ada7031
+name: Nation and Region
+steps:
+  - 112b7289-998f-4959-aadb-80f308ad8f87
+  - 2feb7af4-d797-482f-ac3e-769e3a4c5e7f
+  - 55958250-58ab-4181-bdd1-b9c5be9385c2
+  - 8afa4c68-b13f-4ec4-8382-59ee5728b3d8
+  - e986b01a-9fa2-4b28-9a85-021898f6845b
+type: Subgraph

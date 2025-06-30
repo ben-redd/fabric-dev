@@ -1,0 +1,142 @@
+fileVersion: 1
+id: 112b7289-998f-4959-aadb-80f308ad8f87
+name: JOIN_NATION_REGION
+operation:
+  config:
+    OverrideSQLCreate: false
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: Join between STG_NATION and STG_REGION
+  isMultisource: false
+  locationName: DESTINATION
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0dd9d67d-be92-4bf9-a3a0-4518d126773e
+          stepCounter: 112b7289-998f-4959-aadb-80f308ad8f87
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: N_NATIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3b0e2c46-fedd-42bb-807a-e37a84bd245a
+                stepCounter: e986b01a-9fa2-4b28-9a85-021898f6845b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd3e5953-c90a-4024-9637-12918fab922e
+          stepCounter: 112b7289-998f-4959-aadb-80f308ad8f87
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: N_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35e794c7-b87f-4f78-8559-8eedd10d39e4
+                stepCounter: e986b01a-9fa2-4b28-9a85-021898f6845b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 54febf2e-b331-41fc-a19d-e8bfe25fe4a2
+          stepCounter: 112b7289-998f-4959-aadb-80f308ad8f87
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: N_REGIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ef963f9-2844-4252-845b-fe336ba920d3
+                stepCounter: e986b01a-9fa2-4b28-9a85-021898f6845b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ce1cb858-ae32-451c-8031-1824a6fc5838
+          stepCounter: 112b7289-998f-4959-aadb-80f308ad8f87
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: N_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0a2e6fcf-80bf-4a25-bdf8-03a183185408
+                stepCounter: e986b01a-9fa2-4b28-9a85-021898f6845b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8a622be-eae0-4097-bf1d-cef6e4421492
+          stepCounter: 112b7289-998f-4959-aadb-80f308ad8f87
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: R_REGIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f92c421b-e2d0-483c-a4c2-01cea91278e8
+                stepCounter: 55958250-58ab-4181-bdd1-b9c5be9385c2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b0c44c3-b58d-4bbb-be8c-9edb27c0e3fc
+          stepCounter: 112b7289-998f-4959-aadb-80f308ad8f87
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: R_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79fa43a3-af2f-4ea7-8cac-995c3278cca1
+                stepCounter: 55958250-58ab-4181-bdd1-b9c5be9385c2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8c8c5254-cb3f-459e-8934-e51a830ae9c8
+          stepCounter: 112b7289-998f-4959-aadb-80f308ad8f87
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: R_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cca07eb-4a3f-4da3-b621-b0f6aa622a3d
+                stepCounter: 55958250-58ab-4181-bdd1-b9c5be9385c2
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          STG_NATION: e986b01a-9fa2-4b28-9a85-021898f6845b
+          STG_REGION: 55958250-58ab-4181-bdd1-b9c5be9385c2
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DESTINATION
+            nodeName: STG_NATION
+          - locationName: DESTINATION
+            nodeName: STG_REGION
+        join:
+          joinCondition: FROM {{ ref('DESTINATION', 'STG_NATION') }} "STG_NATION" JOIN {{ ref('DESTINATION', 'STG_REGION') }} "STG_REGION" ON STG_NATION.N_REGIONKEY = STG_REGION.R_REGIONKEY
+        name: JOIN_NATION_REGION
+        noLinkRefs: []
+  name: JOIN_NATION_REGION
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
