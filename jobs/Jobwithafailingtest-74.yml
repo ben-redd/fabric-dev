@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "74"
+includeSelector: "{ subgraph: \"Nation and Region\" }"
+name: Job with a failing test
+type: Job
