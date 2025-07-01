@@ -16,7 +16,12 @@ operation:
   locationName: DESTINATION
   materializationType: table
   metadata:
-    appliedNodeTests: []
+    appliedNodeTests:
+      - continueOnFailure: true
+        description: ""
+        name: Test
+        runOrder: After
+        templateString: SELECT * FROM {{ ref_no_link('DESTINATION','STG_NATION') }} WHERE N_NATIONKEY > 0
     columns:
       - appliedColumnTests: {}
         columnReference:

@@ -1,0 +1,81 @@
+fileVersion: 1
+id: f0991137-19db-4590-8640-b09b779f7800
+name: V_REGION_EDIT
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DESTINATION
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4268fed7-10c5-486f-94a9-2c6384a92fc6
+          stepCounter: f0991137-19db-4590-8640-b09b779f7800
+        config: {}
+        dataType: DECIMAL(38,6)
+        description: ""
+        name: R_REGIONKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f92c421b-e2d0-483c-a4c2-01cea91278e8
+                stepCounter: 55958250-58ab-4181-bdd1-b9c5be9385c2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc469bd8-87be-416e-9a91-a7f6d3769a34
+          stepCounter: f0991137-19db-4590-8640-b09b779f7800
+        config: {}
+        dataType: VARCHAR(8000)
+        description: ""
+        name: R_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79fa43a3-af2f-4ea7-8cac-995c3278cca1
+                stepCounter: 55958250-58ab-4181-bdd1-b9c5be9385c2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0fdb36a2-4ddd-40c8-a8a3-223b58f5773e
+          stepCounter: f0991137-19db-4590-8640-b09b779f7800
+        config: {}
+        dataType: VARCHAR(8000)
+        description: ""
+        name: R_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cca07eb-4a3f-4da3-b621-b0f6aa622a3d
+                stepCounter: 55958250-58ab-4181-bdd1-b9c5be9385c2
+            transform: ""
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: DESTINATION
+            nodeName: STG_REGION
+        join:
+          joinCondition: FROM {{ ref('DESTINATION', 'STG_REGION') }} [STG_REGION]
+        name: V_REGION_EDIT
+        noLinkRefs: []
+  name: V_REGION_EDIT
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
