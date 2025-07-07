@@ -45,7 +45,7 @@ operation:
           - columnReferences:
               - columnCounter: 007902ec-b7e0-44a7-8b6a-a0674b9d9c5c
                 stepCounter: ad1b4c1e-41af-47ad-9fde-6c100e3ca748
-            transform: LOWER(UPPER_CASE.P_NAME)
+            transform: LOWER([PART].[P_NAME])
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d16c5a42-a768-4d73-ad0b-ca84bd2ad9e1
