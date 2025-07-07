@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "75"
+includeSelector: "{ location: DESTINATION name: lower_case } OR { location: SOURCE name: PART } OR { location: DESTINATION name: UPPER_CASE } OR { location: DESTINATION name: Mixed_Case }"
+name: Case sensitivity test
+type: Job
