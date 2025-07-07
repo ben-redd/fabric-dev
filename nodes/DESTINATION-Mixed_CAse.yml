@@ -1,6 +1,6 @@
 fileVersion: 1
 id: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
-name: Mixed_Case
+name: Mixed_CAse
 operation:
   config:
     insertStrategy: INSERT
@@ -155,9 +155,9 @@ operation:
             nodeName: PART
         join:
           joinCondition: FROM {{ ref('SOURCE', 'PART') }} [PART]
-        name: Mixed_Case
+        name: Mixed_CAse
         noLinkRefs: []
-  name: Mixed_Case
+  name: Mixed_CAse
   overrideSQL: false
   schema: ""
   sqlType: Stage
