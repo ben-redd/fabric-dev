@@ -1,11 +1,11 @@
 fileVersion: 1
-id: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
-name: Mixed_CAse
+id: e6f39da4-c9ec-4aff-b4e7-d2a9f6061d74
+name: lower_case2
 operation:
   config:
     insertStrategy: INSERT
     postSQL: ""
-    preSQL: SELECT 1 FROM [guest].[Mixed_CAse]
+    preSQL: ""
     selectDistinct: false
     testsEnabled: true
     truncateBefore: true
@@ -20,8 +20,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: a672fae9-3b92-4b0a-b640-2b6b3bd5fd37
-          stepCounter: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
+          columnCounter: bb20c54c-653b-4711-b89a-a9712bee355f
+          stepCounter: e6f39da4-c9ec-4aff-b4e7-d2a9f6061d74
         config: {}
         dataType: DECIMAL(38,6)
         description: ""
@@ -29,13 +29,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 8ebac618-947f-4f9b-aacd-365357a6d863
-                stepCounter: ad1b4c1e-41af-47ad-9fde-6c100e3ca748
+              - columnCounter: 981d49da-a528-4cb7-b096-c8bc7a88be43
+                stepCounter: ec880575-b294-44b2-a4be-ac0619a0f466
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 7488427d-4a7a-4be3-bb48-4959a1baf416
-          stepCounter: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
+          columnCounter: 7145d2fa-1ead-4a74-9000-4c40649c2a4d
+          stepCounter: e6f39da4-c9ec-4aff-b4e7-d2a9f6061d74
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -43,13 +43,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 007902ec-b7e0-44a7-8b6a-a0674b9d9c5c
-                stepCounter: ad1b4c1e-41af-47ad-9fde-6c100e3ca748
-            transform: ""
+              - columnCounter: 6315c254-d635-43ae-a51e-eea365c36c79
+                stepCounter: ec880575-b294-44b2-a4be-ac0619a0f466
+            transform: LOWER([lower_case].[P_NAME])
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 1f30a1da-d634-472d-ad0f-008204e36ad8
-          stepCounter: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
+          columnCounter: da70af18-d5e2-4f91-be1b-cb07c2d8ed12
+          stepCounter: e6f39da4-c9ec-4aff-b4e7-d2a9f6061d74
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -57,13 +57,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 3df847f3-958d-4820-8a18-f24bf21e4bf8
-                stepCounter: ad1b4c1e-41af-47ad-9fde-6c100e3ca748
+              - columnCounter: 5d86329b-bd86-417a-8f2b-8cc84d1c3053
+                stepCounter: ec880575-b294-44b2-a4be-ac0619a0f466
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 68dad8fb-7885-4e49-91fe-b0ae8276120c
-          stepCounter: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
+          columnCounter: e87f9113-9a75-494d-afa2-7ca2599475a0
+          stepCounter: e6f39da4-c9ec-4aff-b4e7-d2a9f6061d74
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -71,13 +71,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 922a0dfe-5a7c-47c6-a8cd-4cca4faa556b
-                stepCounter: ad1b4c1e-41af-47ad-9fde-6c100e3ca748
+              - columnCounter: fff4d5be-e0a9-4fe7-b74d-91fef87ea3fd
+                stepCounter: ec880575-b294-44b2-a4be-ac0619a0f466
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3a6f93b9-53ac-4f19-9912-bbb9d03225ee
-          stepCounter: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
+          columnCounter: 393d7588-2cda-4a4d-be1e-101e31e85c01
+          stepCounter: e6f39da4-c9ec-4aff-b4e7-d2a9f6061d74
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -85,13 +85,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: e0913056-82fe-4179-8a87-edda1828c1b1
-                stepCounter: ad1b4c1e-41af-47ad-9fde-6c100e3ca748
+              - columnCounter: ebd331e5-c297-429c-b5f1-6c4d7cbf7a78
+                stepCounter: ec880575-b294-44b2-a4be-ac0619a0f466
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: bac7c8cc-e50f-42a5-b7d2-ab3102e63403
-          stepCounter: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
+          columnCounter: fd1e02a2-3cfb-416e-85e8-5e0880fc3681
+          stepCounter: e6f39da4-c9ec-4aff-b4e7-d2a9f6061d74
         config: {}
         dataType: DECIMAL(38,6)
         description: ""
@@ -99,13 +99,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 8722c027-d54e-4a28-b226-0561f033a0e0
-                stepCounter: ad1b4c1e-41af-47ad-9fde-6c100e3ca748
+              - columnCounter: 35ec4c4a-22c6-48cc-8d5f-f7f32f14af0a
+                stepCounter: ec880575-b294-44b2-a4be-ac0619a0f466
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 8135df08-36d4-44f3-8712-9b0e8018e480
-          stepCounter: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
+          columnCounter: 81956256-07d2-46de-82f9-70bb46b3ef7c
+          stepCounter: e6f39da4-c9ec-4aff-b4e7-d2a9f6061d74
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -113,13 +113,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 8ddfb004-000a-4dad-b2a2-febd02df66eb
-                stepCounter: ad1b4c1e-41af-47ad-9fde-6c100e3ca748
+              - columnCounter: 7cc10391-8312-4ae3-b05c-a8177ed3e738
+                stepCounter: ec880575-b294-44b2-a4be-ac0619a0f466
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 1ca87d07-982d-4b26-9134-d8dbedfea94f
-          stepCounter: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
+          columnCounter: 8729da63-89a9-4d79-8bc9-d26b68331089
+          stepCounter: e6f39da4-c9ec-4aff-b4e7-d2a9f6061d74
         config: {}
         dataType: DECIMAL(38,6)
         description: ""
@@ -127,13 +127,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 95a16467-af4c-4ed4-8743-b223170615be
-                stepCounter: ad1b4c1e-41af-47ad-9fde-6c100e3ca748
+              - columnCounter: 6c8e3458-8145-490d-aac3-f2681c6f95fd
+                stepCounter: ec880575-b294-44b2-a4be-ac0619a0f466
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: e39fa979-de83-4fad-8c30-89f42f29be59
-          stepCounter: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
+          columnCounter: d03f0c26-3b4b-4798-b96b-f88aaf71eff9
+          stepCounter: e6f39da4-c9ec-4aff-b4e7-d2a9f6061d74
         config: {}
         dataType: VARCHAR(8000)
         description: ""
@@ -141,8 +141,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 768b1e89-209e-458d-96f9-d634342f367f
-                stepCounter: ad1b4c1e-41af-47ad-9fde-6c100e3ca748
+              - columnCounter: 3fb7c5f3-fe31-421d-a7d5-390082a7bef6
+                stepCounter: ec880575-b294-44b2-a4be-ac0619a0f466
             transform: ""
     cteString: ""
     enabledColumnTestIDs: []
@@ -151,13 +151,13 @@ operation:
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: SOURCE
-            nodeName: PART
+          - locationName: DESTINATION
+            nodeName: lower_case
         join:
-          joinCondition: FROM {{ ref('SOURCE', 'PART') }} [PART]
-        name: Mixed_CAse
+          joinCondition: FROM {{ ref('DESTINATION', 'lower_case') }} [lower_case]
+        name: lower_case2
         noLinkRefs: []
-  name: Mixed_CAse
+  name: lower_case2
   overrideSQL: false
   schema: ""
   sqlType: Stage

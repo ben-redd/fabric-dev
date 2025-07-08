@@ -143,7 +143,7 @@ operation:
           - columnReferences:
               - columnCounter: c2c5f2cf-b48c-4ee3-bb1a-354554d11694
                 stepCounter: 9aacf799-ee98-4d63-89b2-78c3adb4821e
-            transform: LOWER([UPPER_CASE].[P_COMMENT])
+            transform: LOWER([upper_case].[P_COMMENT])
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
