@@ -135,7 +135,7 @@ operation:
           columnCounter: a1e4fc40-67ad-4747-8a59-4d717950b8c8
           stepCounter: 0770038d-703c-4e15-90fd-de62fdc0227a
         config: {}
-        dataType: VARCHAR(7500)
+        dataType: VARCHAR(8000)
         description: ""
         name: P_COMMENT
         nullable: true
@@ -144,6 +144,26 @@ operation:
               - columnCounter: e39fa979-de83-4fad-8c30-89f42f29be59
                 stepCounter: dd8bfbb1-0378-49c0-86f0-5fd74b2fda7f
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c756a5aa-6816-4970-8afb-59a088080e21
+          stepCounter: 0770038d-703c-4e15-90fd-de62fdc0227a
+        config: {}
+        dataType: VARCHAR(1000)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: P_TEST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
