@@ -135,7 +135,7 @@ operation:
           columnCounter: a1e4fc40-67ad-4747-8a59-4d717950b8c8
           stepCounter: 0770038d-703c-4e15-90fd-de62fdc0227a
         config: {}
-        dataType: VARCHAR(8500)
+        dataType: VARCHAR(7500)
         description: ""
         name: P_COMMENT
         nullable: true
