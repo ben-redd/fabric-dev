@@ -152,7 +152,7 @@ operation:
           columnCounter: c756a5aa-6816-4970-8afb-59a088080e21
           stepCounter: 0770038d-703c-4e15-90fd-de62fdc0227a
         config: {}
-        dataType: VARCHAR(1000)
+        dataType: DECIMAL(38,6)
         defaultValue: ""
         description: ""
         keyColumnType: None
