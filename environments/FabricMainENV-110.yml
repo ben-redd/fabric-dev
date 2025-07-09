@@ -3,7 +3,7 @@ id: "110"
 mappingDefinitions:
   DESTINATION:
     database: COALESCE_DEV
-    schema: guest
+    schema: ben_dev
   INVALID:
     database: COALESCE_DEV
     schema: invalid_schema

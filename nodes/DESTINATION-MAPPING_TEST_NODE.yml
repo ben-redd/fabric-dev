@@ -13,7 +13,7 @@ operation:
   deployEnabled: true
   description: ""
   isMultisource: false
-  locationName: INVALID
+  locationName: DESTINATION
   materializationType: table
   metadata:
     appliedNodeTests: []
