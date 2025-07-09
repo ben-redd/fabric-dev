@@ -4,6 +4,9 @@ mappingDefinitions:
   DESTINATION:
     database: COALESCE_DEV
     schema: guest
+  INVALID:
+    database: INVALID_TEST
+    schema: guest
   SOURCE:
     database: COALESCE_DEV
     schema: dbo

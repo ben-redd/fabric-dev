@@ -1,5 +1,8 @@
 fileVersion: 1
 id: "132"
-mappingDefinitions: {}
+mappingDefinitions:
+  INVALID:
+    database: ""
+    schema: ""
 name: test
 type: Environment
