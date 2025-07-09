@@ -5,8 +5,8 @@ mappingDefinitions:
     database: COALESCE_DEV
     schema: guest
   INVALID:
-    database: INVALID_TEST
-    schema: guest
+    database: COALESCE_DEV
+    schema: invalid_schema
   SOURCE:
     database: COALESCE_DEV
     schema: dbo
