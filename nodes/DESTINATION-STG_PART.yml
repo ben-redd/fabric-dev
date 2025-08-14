@@ -137,7 +137,7 @@ operation:
         config: {}
         dataType: VARCHAR(8000)
         description: ""
-        name: ""
+        name: P_COMMENT
         nullable: true
         sourceColumnReferences:
           - columnReferences:
