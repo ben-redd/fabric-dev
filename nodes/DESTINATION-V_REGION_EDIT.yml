@@ -57,14 +57,9 @@ operation:
                 stepCounter: 55958250-58ab-4181-bdd1-b9c5be9385c2
             transform: ""
     cteString: ""
-    description: ""
-    destinationName: ""
     enabledColumnTestIDs: []
-    materializationOption: ""
     sourceMapping:
       - aliases: {}
-        customSQL:
-          customSQL: ""
         dependencies:
           - locationName: DESTINATION
             nodeName: STG_REGION

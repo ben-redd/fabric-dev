@@ -50,7 +50,7 @@ operation:
           - columnReferences:
               - columnCounter: 98ae2be3-0538-43fc-a48d-401c885e265c
                 stepCounter: 2feb7af4-d797-482f-ac3e-769e3a4c5e7f
-            transform: ""
+            transform: UPPER([NATION].[N_NAME])
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8ef963f9-2844-4252-845b-fe336ba920d3
@@ -82,9 +82,8 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
-        customSQL:
-          customSQL: ""
+      - aliases:
+          NATION: 2feb7af4-d797-482f-ac3e-769e3a4c5e7f
         dependencies:
           - locationName: SOURCE
             nodeName: NATION

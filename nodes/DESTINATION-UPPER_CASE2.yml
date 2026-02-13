@@ -148,8 +148,6 @@ operation:
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases: {}
-        customSQL:
-          customSQL: ""
         dependencies:
           - locationName: DESTINATION
             nodeName: UPPER_CASE
