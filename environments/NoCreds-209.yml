@@ -2,8 +2,8 @@ fileVersion: 1
 id: "209"
 mappingDefinitions:
   DESTINATION:
-    database: COALESCE_DEV
-    schema: ben_dev
+    database: ""
+    schema: ""
   INVALID:
     database: COALESCE_DEV
     schema: invalid_schema
