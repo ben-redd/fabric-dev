@@ -1,5 +1,14 @@
 fileVersion: 1
 id: "209"
-mappingDefinitions: {}
+mappingDefinitions:
+  DESTINATION:
+    database: COALESCE_DEV
+    schema: ben_dev
+  INVALID:
+    database: COALESCE_DEV
+    schema: invalid_schema
+  SOURCE:
+    database: COALESCE_DEV
+    schema: dbo
 name: No Creds
 type: Environment
